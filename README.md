@@ -1,6 +1,13 @@
 <!-- @file Instructions for subtheming using the CDN Starterkit. -->
 <!-- @defgroup sub_theming_cdn -->
 <!-- @ingroup sub_theming -->
+从bootstrap 3 中cdn建立 的子模板
+1、修改模板名及各个文件中和THEMENAME有关的变量
+2、在模板中删除使用cdn选项，墙内有时使用cdn会出问题
+3、用bootstrap library 中的本地库替换
+
+
+
 # CDN Starterkit
 
 The CDN Starterkit is rather simple to set up. You don't have to do anything

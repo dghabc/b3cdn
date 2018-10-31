@@ -6,3 +6,47 @@
  *
  * Place your custom PHP code in this file.
  */
+// use Drupal\Core\Render\Element;
+
+function b3cdn_preprocess_page(&$variables){
+  // Add layout class to Featured Blocks
+
+}
+
+function b3cdn_preprocess_region(&$variables){
+ // kint($variables);
+   /*if ($variables['region'] == 'featured') {
+     foreach (Element::children($variables['elements']) as $key)
+     {
+      //
+      $variables['elements'][$key]['#attributes']['class'][] = 'col-md-4';
+      // kint($element);
+      }
+
+
+
+     //$count = count(Element::children($variables['elements']));
+      //$variables['attributes']['class'][] = 'col-md-4';
+   // kint($variables);
+*/
+   }
+
+  // Add layout class to Featured Blocks
+
+
+
+
+function b3cdn_preprocess_block(&$variables){
+  // Add layout class to Featured Blocks
+  //kint($variables);
+
+
+
+  $featured = array('block-headingblock1','block-headingblock2','block-headingblock3');
+
+  $id = $variables['attributes']['id'];
+  // If block id matches list - add class
+  if(in_array($id, $featured)){
+    $variables['attributes']['class'][] = 'col-md-4';
+  }
+}
